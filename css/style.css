@@ -1,0 +1,907 @@
+
+body
+{
+	float:middle;
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, Helvetica;
+	min-height:100%;
+}
+:root
+{
+    --fenyes:#FFFFFF;
+    --sotet:rgb(24,27,36,0.9);
+    --narancs:#FC5130;
+	--padlizsan:#0f2e60;
+	--szurke:#413B3B;
+}
+.TT
+{
+	margin:0px;
+	padding:0px;
+}
+.header
+{
+	background: #413B3B;
+	color: white;
+	width:100%;
+	padding:0px;
+	margin:0px;
+	display:flex;
+	position:fixed;
+	top:0;
+	z-index:1;
+}
+.udvozlotartalom
+{
+	width:100%;
+	height:60vh;
+    text-align:center;
+    align-items:center;
+	display:flex;
+	margin:0px;
+	padding:0px;
+	background-color:#0f2e60;
+}
+.udvozollek
+{
+	width:100%;
+    text-align:center;
+    align-items:center;
+	color:white;
+	font-size:18px;
+}
+
+.row
+{
+    text-align:center;
+    align-items:center;
+	color:#0f2e60;
+	font-size:22px;
+	display:flex;
+}
+.col-md-12
+{
+	width:100%;
+    height: auto;
+    text-align: center;
+    align-items: center;
+	color:#0f2e60;
+	font-size:18px;
+}
+.topicok
+{
+	width:100%;
+	height:200px;
+	background-color:grey;
+	position:relative;
+}
+
+.tartalom2
+{
+	height:600px;
+	background-color:#0f2e60;
+}
+.mylogo
+{
+	float:left;
+	max-width:50px;
+	max-height:50px;
+	border-radius:25px;
+	padding:0px;
+	margin:5px;
+}
+.keret
+{
+	float:left;
+	width:90%;
+	margin:0px;
+	padding:0px;
+	
+	
+}
+.hatterkep
+{
+    height:40vh;
+	width:100%;
+    display: flex;
+    background-image: url(../images/hatter.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    align-items: center;
+}
+
+}
+.flex-nav
+{
+    width: 60%;
+}
+.flex-nav ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 8px 0px;
+    display: flex;
+}
+.flex-nav ul li
+{
+    flex:1;
+}
+.flex-nav a
+{
+    letter-spacing: 3px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    color:white;
+    transition: all 0.5s ease;
+}
+.flex-nav .toggleNav
+{
+    display: none;
+    width: auto;
+}
+.flex-nav a:hover
+{
+    color:var(--padlizsan);
+}
+.kapcsolat
+{
+	cursor:pointer;
+}
+
+
+.keret
+{
+	padding:8px;
+}
+
+.belsokeret
+{
+	position:absolute;
+	display:none; /*nem látszik*/
+	
+}
+
+.ful
+{
+	width:0px;
+	height:0px;
+	border-left:8px solid transparent;
+	border-right:8px solid transparent;
+	border-bottom:8px solid white;
+	margin-left:95px;
+}
+.ikonkeret
+{
+	padding-top:8px;
+	background:green;
+	border-radius:20px;
+}
+
+.reglink
+{
+	padding:8px;
+}
+
+.belepmezo
+{
+	width:100%;
+	margin-bottom:8px;
+	border-radius:4px;
+	border:1px solid #666666;
+	padding:5px;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-shadow: 3px 3px 3px #666666;
+}
+.belepmezoikon
+{
+	width:100%;
+	margin-bottom:8px;
+	border-radius:4px;
+	border:1px solid #CCCCCC;
+	padding:5px;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	font-family:arial;
+	font-size:18px;
+}
+.reglink
+{
+	text-align:center;
+	max-width:40%;
+	color:white;
+	text-decoration:underline;
+	background-color:green;
+	margin-top:3px;
+	font-family:arial;
+	border-radius:40px;
+	cursor:pointer;
+		
+}
+
+.usertartalom
+{
+	padding:10px;
+	width:55%;
+	background:white;
+	box-shadow:8px 8px 8px #413B3B;
+	color:black;
+	border-radius:20px;
+
+}
+.regablak, .uzenetablak
+{
+	padding:0px;
+	margin:0px;
+}
+
+.regmezo
+ {
+	text-align:middle;
+	float:middle;
+	font-size:28px;
+	box-shadow:3px 3px 5px #413B3B;
+	width:90%;
+	border-radius:10px;
+	padding:8px;
+	margin-top:10px;
+ }
+ .uzenetmezo
+ {
+	 text-align:middle;
+	float:middle;
+	font-size:28px;
+	box-shadow:3px 3px 5px #413B3B;
+	width:90%;
+	border-radius:10px;
+	padding:8px;
+	margin-top:10px;
+ }
+.uzenetmezotitkos
+{
+	visibility:hidden;
+	text-align:middle;
+	float:middle;
+	font-size:28px;
+	box-shadow:3px 3px 5px #413B3B;
+	width:90%;
+	border-radius:10px;
+	padding:8px;
+	margin-top:10px;
+}
+.reggomb
+ {
+	float:middle;
+	font-size:28px;
+	box-shadow:3px 3px 5px #413B3B;
+	width:50%;
+	border-radius:10px;
+	padding:8px;
+	margin-top:20px;
+ }
+.cookieelfogadokeret
+{
+	position: fixed;
+	width: 100%;
+	bottom: 5px;
+	right: 0;
+	left: 0;
+	height: 70px;
+	float:left;
+	background: #413B3B;
+	color: white;
+	font-size: 22px;
+	font-family: "Lato", sans-serif;
+	font-weight: 100;
+	/*box-shadow:3px 3px 5px #413B3B;*/
+	border-bottom-right-radius:20px;
+	border-top-right-radius:20px;
+		
+}
+.cookiedoboz
+{
+	margin-top:20px;
+	width:80px;
+	margin-right:30px;
+	float:right;
+}
+.cookieszoveg
+{
+	margin-top:20px;
+	width:80%;
+	float:left;
+	margin-left:20px;
+}
+
+
+input[type=submit] 
+{
+	padding:3px 15px;
+    background:green; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+	font-size:24px;
+	color:white;
+	font-family:bold;
+}
+.regvisszajelzes
+{
+	
+	margin-top:100px;
+	text-align:center;
+	color:#413B3B;
+	float:middle;
+	font-size:28px;
+	font-family:arial;
+	
+}
+.loading
+{
+	margin-top:60px;
+	color:#413B3B;
+	float:middle;
+	font-size:28px;
+	font-family:arial;
+}
+.loadinggif
+{
+	margin-top:20px;
+	width:2%;
+	height:2%;
+	
+}
+.belepve
+{
+	font-size:18px;
+	color:green;
+	font-family:bold;
+	margin-left:15px;
+	display:flex;
+	cursor:pointer;
+	
+	
+}
+.kilepes
+{
+	padding:0px;
+	margin:0px;
+	
+}
+.maradjakkeret
+{
+	font-size:18px;
+	font-family:bold;
+	
+}
+.balfooter
+{
+	padding:0px;
+	margin:0px;
+	float:left;
+	width:50%;
+	height:80px;
+	font-size:20px;
+	color:white;
+	text-decoration:underline;
+	opacity:0.8;
+	background-color:#413B3B;
+	
+}
+.jobbfooter
+{
+	padding:0px;
+	margin:0px;
+	float:right;
+	width:50%;
+	height:80px;
+	opacity:0.8;
+	background-color:#413B3B;
+	
+}
+.footerszoveg
+{
+	margin-top:25px;
+	height:50%;
+    display: flex;
+    justify-content: space-around;
+	
+}
+.footer
+{
+	z-index:1;
+    justify-content:space-between;
+    align-items:flex-end;
+    flex-wrap: wrap;
+    background:#413B3B;
+    height: 80px;
+	bottom:0;
+	padding:0px;
+	margin:0px;
+	display:flex;
+	
+
+}
+.footerkep
+{
+	
+	height:80px;
+	width:100%;
+    display: flex;
+    background-image: url(../images/keyboard.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    align-items: center;
+}
+.footerszovegmobil
+{
+	display:none;
+	margin-top:20px;
+	font-size:18px;
+}
+.footerkep
+{
+	z-index:0;
+	width:100%;
+	height:80px;
+	padding:0px;
+	margin:0px;
+}
+.footer-icons
+{
+	margin-top:25px;
+	height:50%;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-single-icon
+{
+    color:white;
+    font-size: 1.6rem;
+    transition: all 0.5s ease; 
+}
+.footer-single-icon:hover
+{
+    color:var(--padlizsan);
+}
+.valasz
+{
+	background:#CCCCCC;
+	font-size:24px;
+	color:green;
+	text-align:center;
+	margin-top:50px;
+}
+.regtabla
+{
+	text-align:center;
+	font-size:20px;
+	font-family:bold;
+	width:350px;
+	height:450px;
+	padding:0px;
+	margin:0px;	
+	border-radius:10px;
+	color:black;
+}
+.reginput
+{
+	
+	border-radius:10px;
+}
+.regsor
+{
+	border:1px solid black;
+}
+.kapcsolattartalom
+{
+	width:100%;
+	display:flex;
+	margin:0px;
+	padding:0px;
+	margin-top:150px;
+	font-size:26px;
+	background-color:var(--padlizsan);
+	color:white;
+	border-radius:3px;
+}
+.bekezdes
+{
+	width:25%;
+	margin:0px;
+	padding:0px;
+	float:left;
+}
+.terkep
+{
+	width:50%;
+	z-index:0;
+	position:relative;
+	margin:0px;
+	padding:0px;
+	float:middle;
+
+}
+.terkepbox
+{
+	
+	width:700px;
+	height:400px;
+	border-radius:50px;
+}
+.keszitette
+{
+	width:25%;
+	margin:0px;
+	padding:0px;
+	float:right;
+	font-size:26px;
+	background-color:var(--padlizsan);
+	color:white;
+}
+.mobilkapcsolattartalom
+{
+	width:100%;
+	display:flex;
+	text-align:center;
+	font-size:22px;
+	margin-top:50px;
+	color:white;
+}	
+.forum
+{
+	cursor:pointer;
+}
+.comment
+{
+	margin-top:100px;
+	margin:0px;
+	padding:0px;
+}
+.doboz
+{
+	min-height:150px;
+	background-color:var(--padlizsan);
+}
+.forumnev
+{
+
+	color:white;
+	font-size:50px;
+	text-align:center;
+	background-color:var(--padlizsan);
+	font-family:arial;
+	width:100%;
+	height:150px;
+	font-family:Arial, Helvetica;
+}
+.forumtapasztalat
+{
+	font-family:Arial, Helvetica;
+	font-size:28px;
+	
+}
+.forumtartalom
+{
+	background-color:var(--szurke);
+	width:100%;
+	height:auto;	
+	margin:0px;
+	padding:0px;
+	
+}
+.hozzaszolasmezo
+{
+	float:middle;
+	width:50%;
+	height:80px;
+	resize:none;
+	border-radius:10px;
+}
+.hozzaszolascim
+{
+	float:middle;
+	width:150px;
+	border-radius:10px;
+	height:30px;
+}
+
+.ujhozzaszoldoboz
+{
+	width:30%;
+	margin:8px;	
+}
+.hozzaszolaslista
+{
+	position:relative;
+	float:middle;
+	text-align:center;
+	margin:0px;
+	padding:0px;
+}
+.egyhozzaszoldoboz
+{
+	width:80%;
+	margin:0px;
+	float:middle;
+	margin-top:10px;
+	border:2px solid black;
+	border-radius:10px;
+	min-height:70px;
+	margin-left:20px;
+}
+.hozzaszolasdoboz
+{
+	margin-top:30px;
+	margin-left:20px;
+}
+.hozzaszolfejlec
+{
+	overflow:auto;
+	padding:8px;
+	border-bottom:2px solid black;
+	background:var(--padlizsan);
+	color:white;
+	font-size:22px;
+	
+}
+
+.forumbal
+{
+	float:left;
+}
+
+.forumjobb
+{
+	float:right;
+}
+
+.forumcim
+{
+	background:white;
+	padding:8px;
+	max-width:15%;
+	text-align:center;
+	border:2px solid black;
+	border-left:0px;
+	border-top:0px;
+	border-bottom-right-radius:10px;
+	font-size:22px;
+	font-family:Arial, Helvetica;
+}
+
+.hszoveg
+{
+	text-align:left;
+	background-color:white;
+	padding:8px;
+	Font-size:16px;
+	background:#E1B6DF;
+	border-bottom-right-radius:10px;
+	border-bottom-left-radius:10px;
+	font-family:Arial, Helvetica;
+	
+}	
+	
+.visszagomb
+{
+	font-size:24px;
+	color:var(--padlizsan);
+	background-color:white;
+	border:3px solid white;
+	position:absolute;
+	border-radius:17px;
+	margin:5px;
+	cursor:pointer;
+	text-decoration:none;
+	
+	
+}	
+.forumtitle
+{
+	font-size:20px;
+	color:white;
+}
+.read
+{
+	cursor:pointer;
+}	
+.readerdiv
+{
+	color:white;
+	height:auto;
+	width:100%;
+	margin:0px;
+	padding:0px;
+	text-align:center;
+	float:middle;
+	background:var(--padlizsan);
+	
+	
+}
+.readercim
+{
+	
+	border-bottom:2px solid white;	
+	font-size:36px;
+	padding-top:25px;
+}
+.readerszoveg
+{
+	margin-top:2px;
+	color:white;
+	font-size:22px;
+	padding:2px;
+	margin-left:50px;
+	margin-right:50px;
+}
+.keresesfelirat
+{
+	margin-top:10px;
+	margin-left:20px;
+	font-size:20px;
+	color:white;
+}
+.keresoablak
+{
+	height:40px;
+	float:left;
+	size:30px;
+	border-radius:10px;
+}
+.keresosubmit
+{
+	height:40px;
+	float:left;
+	size:20px;
+	color:#FC5130;
+	border-radius:10px;
+	cursor:pointer;
+}
+.kerestalal
+{
+	font-size:18px;
+	color:white;
+	font-family:bold;
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+.flex-nav ul.open
+{
+    display: flex
+}
+@media screen and (max-width:1060px)
+{ 
+    .flex-nav ul
+	{
+        flex-wrap: wrap;
+    }
+    .flex-nav ul li
+	{
+        flex: 1 1 50%;
+    }
+    .flex-nav .social
+	{
+        flex: 1 1 25%;
+    }
+    .cim{
+        font-size: 1.5em;
+    }
+    .logo{
+        display: none;
+    }
+}
+@media (max-width:900px)
+{
+    .flex-nav .toggleNav
+	{
+        display: block;
+    }
+    .flex-nav ul
+	{
+        display:none;
+    }
+    .teszt
+	{
+        width: 80%;
+    }
+}
+@media (max-width:500px)
+{
+	.footerszoveg
+	{
+		display:none;
+	}
+	.footerszovegmobil
+	{
+		display:block;
+	}
+}
+@media (max-width:1350px)
+{
+	.kapcsolattartalom
+	{
+		display:none;
+		width:0%;
+	}
+	.mobilkapcsolattartalom
+	{
+		display:block;
+	}
+
+}
+@media (min-width:1350px)
+{
+	.mobilkapcsolattartalom
+	{
+		display:none;
+	}
+}
+font-face
+{
+    font-family: Josef1;
+    src:url('../josefin/JosefinSans-Regular.ttf') 
+}
+
+
+
